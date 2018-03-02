@@ -12,7 +12,8 @@
 ├── var-cidr.tf
 ├── var-gw-names.tf
 ├── var-names.tf
-└── var-tags.tf
+├── var-tags.tf
+└── version.tf
 ```
 
 ## Files table
@@ -29,4 +30,5 @@
 | ./var-gw-names.tf | | 
 | ./var-names.tf | | 
 | ./var-tags.tf | | 
+| ./version.tf | | 
 | ... | ... |
