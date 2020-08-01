@@ -3,9 +3,12 @@ import input
 
 required_outputs = {
   "vpc_id",
-  "rt_id",
-  "igw_id",
-  "vpc_cidr"
+  "public_a",
+  "public_b",
+  "private_a",
+  "private_b",
+  "nat_a_public_ip",
+  "nat_b_public_ip",
 }
 
 deny[msg] {
@@ -22,4 +25,3 @@ deny[msg] {
     count(trim_space(value))<=0
     msg := sprintf("Required output must have a value: %v", [value])
 }
-
